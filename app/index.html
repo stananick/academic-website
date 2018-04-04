@@ -1,3 +1,4 @@
+<!-- partial:partial/_header.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +13,60 @@
 </head>
 <body>
 
-<!--
-* Photo
-* Overview
-* CV - link to PDF
-* Announcements -->
+  <header role="banner">
+    <section class="heading">
+      <h1 class="heading__title">Elizabeth Munch</h1>
+      <h2 class="heading__tagline">Assistant Professor, University of Michigan</h2>
+    </section>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> -->
-</body>
+    <section class="menu">
+      <a href="#menu" class="menu__link">Menu</a>
+      <nav id="menu" role="navigation">
+        <ul class="nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Research</a></li>
+          <li><a href="">People</a></li>
+          <li><a href="">Teaching</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main role="main">
+  <!-- partial -->
+
+    <section class="overview">
+      <img class="overview__image" src="img/elizabeth-munch-headshot.jpg" alt="Headshot of Elizabeth Munch">
+
+      <p>Elizabeth Munch is an assistant professor at <a href="https://msu.edu/">Michigan State University</a> with a primary appointment in the <a href="https://cmse.msu.edu/">Department of Computational Mathematics, Statistics, and Engineering</a> and a secondary appointment in the <a href="https://math.msu.edu/">Department of Mathematics</a>. Her research specializes in Applied Topology and Topological Data Analysis.</p>
+    </section>
+
+    <section>
+      <h2>Announcements</h2>
+
+      <ul>
+        <li>I am hiring a postdoc interested in Reeb graphs, mapper graphs, merge trees, and the interleaving distance. More information is <a href="https://cmse.msu.edu/employment-opportunities/postdocs/">here</a>.</li>
+        <li>The teaspoon code is up and running: <a href="https://gitlab.msu.edu/TSAwithTDA/teaspoon">Code</a> <a href="http://elizabethmunch.com/math/teaspoon/index.html">Documentation</a></li>
+        <li><a href="http://www.albany.edu/~AS929879/">Anastasios Stefanou</a>'s paper on generalizations of the interleaving distance is now available on the <a href="https://arxiv.org/pdf/1706.04095v1.pdf">arXiv</a>.</li>
+        <li>I am moving to <a href="https://msu.edu/">Michigan State University</a>! Starting August, 2017, I will be Assistant Professor with a primary appointment in the <a href="https://cmse.msu.edu/">Department of Computational Mathematics, Statistics, and Engineering</a> and a secondary appointment in the <a href="https://math.msu.edu/">Department of Mathematics</a>.</li>
+        <li>In Fall 2017, I am teaching <strong>CMSE 491/890 - Topological Analysis of Large Datasets</strong>. This course will be of interest to anyone with a bit of computational experience (I will teach in python, but experience in another language such as Matlab, Julia, etc, should be enough to get you through). More info is on my <a href="/math/teaching/">teaching page</a>, in the <a href="/math/teaching/CMSE491-Fall2017-policy.pdf">tentative syllabus</a>, or on <a href="https://d2l.msu.edu">D2L</a>.</li>
+        <li>In Spring 2018, I am teaching CMSE 201. More info to follow.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education and Experience</h2>
+
+      <a href="#">CV</a>
+
+      <p>Liz received her PhD from the <a href="http://www.math.duke.edu">Department of Mathematics</a> at <a href="https://www.duke.edu/">Duke University</a> in May 2013. Prior to joining the faculty of <a href="https://msu.edu/">Michigan State University</a>, she was an Assistant Professor in the <a href="http://www.albany.edu/math/">Department of Mathematics and Statistics</a> at the <a href="http://www.albany.edu">University at Albany - SUNY</a>, and a Postdoctoral Fellow at the <a href="http://www.ima.umn.edu/2013-2014/">Institute for Mathematics and its Applications</a> at the University of Minnesota for the 2013-2014 <a href="https://www.ima.umn.edu/2013-2014/#AnnualWorkshop">thematic year on applications of topology</a>. She also holds a Master of Arts in Mathematics from Duke University, a Bachelor of Science in Mathematics from the University of Rochester, and a Bachelor of Music in Harp Performance from the Eastman School of Music. More information can be found in her <a href="TODO">CV</a>.</p>
+    </section>
+    <!-- partial:partial/_footer.html -->
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
+<!-- partial -->

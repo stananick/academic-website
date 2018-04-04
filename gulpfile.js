@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var injectPartials = require('gulp-inject-partials');
 var browserSync = require('browser-sync').create();
 
 //compiling sass
@@ -20,6 +21,13 @@ gulp.task('browserSync', function() {
     },
   })
 })
+
+//injecting partials
+gulp.task('injectPartials', function () {
+  return gulp.src('app/index.html')
+    .pipe(injectPartials())
+    .pipe(gulp.dest('./app'));
+});
 
 //watching
 gulp.task('default', ['browserSync', 'sass'], function() {
