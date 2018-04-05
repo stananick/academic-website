@@ -1,8 +1,44 @@
 .js {
+  .menu {
+    overflow: hidden;
+    padding-top: 1rem;
+  }
+  
   .menu__link {
     @media screen and (min-width: 48.25rem) {
       display: none;
     }
+  }
+
+  .menu__link__line {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu__link.active .menu__link__line:nth-child(2){
+    opacity: 0;
+  }
+  
+  .menu__link.active .menu__link__line:nth-child(1){
+    -webkit-transform: translateY(10px) rotate(45deg);
+    -ms-transform: translateY(10px) rotate(45deg);
+    -o-transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .menu__link.active .menu__link__line:nth-child(3){
+    -webkit-transform: translateY(-4px) rotate(-45deg);
+    -ms-transform: translateY(-4px) rotate(-45deg);
+    -o-transform: translateY(-4px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
   }
 
   nav {
@@ -22,8 +58,9 @@
     }
     
     ul {
-      margin: 0;
+      margin: 1rem 0 0 0;
       padding: 0;
+      border-top: 1px solid #000;
 
       @media only screen and (min-width: 48.25rem) {
         margin: 0 0 0 -0.25rem;
@@ -31,6 +68,9 @@
     }
 
     li {
+      border-bottom: 1px solid $primary-color;
+      padding: 0.5rem 0 0.5rem 2rem;
+
       @media only screen and (min-width: 48.25rem) {
         display: inline-block;
         margin: 0 0.25rem;

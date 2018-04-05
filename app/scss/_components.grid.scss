@@ -1,0 +1,32 @@
+.grid {
+  display: inline-block;
+  width: 100%;
+
+  &__one-fifth, 
+  &__one-quarter,
+  &__three-quarters,
+  &__four-fifths,
+  &__one-whole {
+    float: left;
+  }
+
+  &__one-fifth {
+    width: 20%;
+  }
+
+  &__one-quarter {
+    width: 25%;
+  }
+
+  &__three-quarters {
+    width: 75%;
+  }
+
+  &__four-fifths {
+    width: 80%;
+  }
+
+  &__one-whole {
+    width: 100%;
+  }
+}

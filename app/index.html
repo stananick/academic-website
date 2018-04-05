@@ -9,41 +9,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" rel="stylesheet" media="all">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700" rel="stylesheet">
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
 </head>
 <body>
 
-  <header role="banner">
-    <section class="heading">
-      <h1 class="heading__title">Elizabeth Munch</h1>
-      <h2 class="heading__tagline">Assistant Professor, University of Michigan</h2>
+  <header role="banner" class="grid">
+    <section class="menu grid__one-fifth">
+      <div class="menu__link">
+        <span class="menu__link__line"></span>
+        <span class="menu__link__line"></span>
+        <span class="menu__link__line"></span>
+      </div>
     </section>
 
-    <section class="menu">
-      <a href="#menu" class="menu__link">Menu</a>
-      <nav id="menu" role="navigation">
-        <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Research</a></li>
-          <li><a href="">People</a></li>
-          <li><a href="">Teaching</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
+    <section class="heading grid__four-fifths">
+      <h1 class="heading__title">Elizabeth Munch<br>
+      <span class="heading__tagline">Assistant Professor, University of Michigan</span></h1>
     </section>
+
+    <nav id="menu" role="navigation" class="grid__one-whole">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main role="main">
-  <!-- partial -->
+<!-- partial -->
 
-    <section class="overview">
+    <section class="overview section">
       <img class="overview__image" src="img/elizabeth-munch-headshot.jpg" alt="Headshot of Elizabeth Munch">
 
       <p>Elizabeth Munch is an assistant professor at <a href="https://msu.edu/">Michigan State University</a> with a primary appointment in the <a href="https://cmse.msu.edu/">Department of Computational Mathematics, Statistics, and Engineering</a> and a secondary appointment in the <a href="https://math.msu.edu/">Department of Mathematics</a>. Her research specializes in Applied Topology and Topological Data Analysis.</p>
     </section>
 
-    <section>
-      <h2>Announcements</h2>
+    <section class="section">
+      <h3>Announcements</h3>
 
       <ul>
         <li>I am hiring a postdoc interested in Reeb graphs, mapper graphs, merge trees, and the interleaving distance. More information is <a href="https://cmse.msu.edu/employment-opportunities/postdocs/">here</a>.</li>
@@ -55,18 +61,26 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Education and Experience</h2>
+    <section class="section">
+      <h3>Education and Experience</h3>
 
-      <a href="#">CV</a>
+      <a class="download" href="#">Download a copy of my CV</a>
 
       <p>Liz received her PhD from the <a href="http://www.math.duke.edu">Department of Mathematics</a> at <a href="https://www.duke.edu/">Duke University</a> in May 2013. Prior to joining the faculty of <a href="https://msu.edu/">Michigan State University</a>, she was an Assistant Professor in the <a href="http://www.albany.edu/math/">Department of Mathematics and Statistics</a> at the <a href="http://www.albany.edu">University at Albany - SUNY</a>, and a Postdoctoral Fellow at the <a href="http://www.ima.umn.edu/2013-2014/">Institute for Mathematics and its Applications</a> at the University of Minnesota for the 2013-2014 <a href="https://www.ima.umn.edu/2013-2014/#AnnualWorkshop">thematic year on applications of topology</a>. She also holds a Master of Arts in Mathematics from Duke University, a Bachelor of Science in Mathematics from the University of Rochester, and a Bachelor of Music in Harp Performance from the Eastman School of Music. More information can be found in her <a href="TODO">CV</a>.</p>
     </section>
-    <!-- partial:partial/_footer.html -->
-    </main>
+<!-- partial:partial/_footer.html -->
+            </main>
+
+    <footer>
+      <ul class="footer-nav">
+        <li>Elizabeth Munch | Assistant Professor, University of Michigan</li>
+        <li>517-432-0619</li>
+        <li><a href="mailto:muncheli@egr.msu.edu">muncheli@egr.msu.edu</a></li>
+      </ul>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
-<!-- partial -->
+        <!-- partial -->

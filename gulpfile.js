@@ -23,8 +23,8 @@ gulp.task('browserSync', function() {
 })
 
 //injecting partials
-gulp.task('injectPartials', function () {
-  return gulp.src('app/index.html')
+gulp.task('build', function () {
+  return gulp.src('app/*.html')
     .pipe(injectPartials())
     .pipe(gulp.dest('./app'));
 });

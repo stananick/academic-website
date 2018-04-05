@@ -1,7 +1,35 @@
 body {
-  margin: 2rem auto;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: $primary-font;
+  font-weight: 400;
 }
 
 img {
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+header {
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $medium-gray;
+}
+
+ul {
+  margin: 1rem;
+  padding: 0;
+}
+
+li {
+  padding: 0.25rem 0;
 }
