@@ -11,7 +11,9 @@
   }
 
   &__one-fifth {
-    width: 20%;
+    @media only screen and (max-width: 47rem) {
+      width: 20%;
+    }
   }
 
   &__one-quarter {
@@ -23,7 +25,9 @@
   }
 
   &__four-fifths {
-    width: 80%;
+    @media only screen and (max-width: 47rem) {
+      width: 80%;
+    }
   }
 
   &__one-whole {
