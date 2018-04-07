@@ -1,23 +1,12 @@
-{
-  "research": [
-    {
-      "authors": "Author",
-      "title": "Title",
-      "venue": "Venue",
-      "date": "Date",
-      "originalLink": "originalLink",
-      "image": "name",
-      "altText": "altText",
-      "abstract": "Abstract",
-      "bibtex": "Bibtex"
-    }
-  ],
+var researchJSON = {
     "paperInfo": [
         {
             "authors": "Firas Khasawneh and Elizabeth Munch",
             "bibtex": "@unpublished{Khasawneh2018,<br> author = {Firas Khasawneh and Elizabeth Munch},<br> note = {In submission},<br> title = {Topological Data Analysis for True Step Detection in Piecewise Constant Signals},<br> year = {2018}<br>}<br><br>",
             "collapseLabel": "Khasawneh2018",
             "date": "2018",
+            "image": "http://lorempixel.com/200/200",
+            "altText": "Altername Image Text",
             "title": "Topological Data Analysis for True Step Detection in Piecewise Constant Signals"
         },
         {
