@@ -1,0 +1,19 @@
+.item-group,
+.item-group__item,
+.additional-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-group {
+  margin: 0 0 1rem 0;
+}
+
+.item-group__item {
+  padding: 0.5rem 1rem;
+}
+
+.item-group__item__title {
+  font-weight: 600;
+}

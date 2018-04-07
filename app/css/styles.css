@@ -56,7 +56,9 @@ p {
   line-height: 1.25rem; }
 
 .paper-listing__item__more__content {
-  display: none; }
+  display: none;
+  font-size: 0.9rem;
+  line-height: 1.25rem; }
   .paper-listing__item__more__content code {
     font-size: 0.75rem; }
 
@@ -67,6 +69,15 @@ p {
     line-height: 1.1rem;
     font-weight: 400;
     display: block; }
+
+.contact-heading {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem; }
+  .contact-heading span {
+    font-size: 1rem; }
 
 h1,
 h2,
@@ -84,14 +95,15 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 1.7rem;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 0 0 1rem 0; }
 
 h3 {
   font-size: 1.25rem;
   line-height: 2.5rem;
   font-weight: 400;
   border-bottom: 1px solid #000;
-  margin-bottom: 1rem; }
+  margin: 1rem 0 0.5rem 0; }
 
 h4 {
   font-size: 1.2rem;
@@ -115,6 +127,22 @@ h4 {
     width: 80%; }
   .grid__one-whole {
     width: 100%; }
+
+.item-group,
+.item-group__item,
+.additional-info {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.item-group {
+  margin: 0 0 1rem 0; }
+
+.item-group__item {
+  padding: 0.5rem 1rem; }
+
+.item-group__item__title {
+  font-weight: 600; }
 
 .js .menu {
   overflow: hidden;

@@ -9,6 +9,18 @@
   }
 }
 
+.contact-heading {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  
+  span {
+    font-size: 1rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -28,6 +40,7 @@ h2 {
   font-size: 1.5rem;
   line-height: 1.7rem;
   font-weight: 400;
+  padding: 0 0 1rem 0;
 }
 
 h3 {
@@ -35,7 +48,7 @@ h3 {
   line-height: 2.5rem;
   font-weight: 400;
   border-bottom: 1px solid #000;
-  margin-bottom: 1rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 h4 {
