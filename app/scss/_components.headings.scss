@@ -1,5 +1,7 @@
 .heading {
   text-align: center;
+  width: 80%;
+  float: left;
 
   @include breakpoint-medium {
     width: 35%;

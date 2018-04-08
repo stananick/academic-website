@@ -13,11 +13,11 @@ header {
   margin: 0.5rem 0;
   overflow: hidden; }
   @media only screen and (min-width: 48rem) {
-    header.grid {
+    header.header {
       display: flex;
       align-items: center; } }
   @media only screen and (min-width: 60rem) {
-    header.grid {
+    header.header {
       max-width: 55rem;
       margin: 1rem auto; } }
 
@@ -99,7 +99,9 @@ p {
     font-size: 0.75rem; }
 
 .heading {
-  text-align: center; }
+  text-align: center;
+  width: 80%;
+  float: left; }
   @media only screen and (min-width: 48rem) {
     .heading {
       width: 35%; } }
@@ -170,24 +172,6 @@ h4 {
   padding: 0;
   margin: 0; }
 
-.grid {
-  display: inline-block;
-  width: 100%; }
-  .grid__one-fifth, .grid__one-quarter, .grid__three-quarters, .grid__four-fifths, .grid__one-whole {
-    float: left; }
-  @media only screen and (max-width: 47rem) {
-    .grid__one-fifth {
-      width: 20%; } }
-  .grid__one-quarter {
-    width: 25%; }
-  .grid__three-quarters {
-    width: 75%; }
-  @media only screen and (max-width: 47rem) {
-    .grid__four-fifths {
-      width: 80%; } }
-  .grid__one-whole {
-    width: 100%; }
-
 .item-group,
 .item-group__item,
 .additional-info {
@@ -206,7 +190,12 @@ h4 {
 
 .js .menu {
   overflow: hidden;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  width: 20%;
+  float: left; }
+  @media only screen and (min-width: 48rem) {
+    .js .menu {
+      display: none; } }
 
 @media only screen and (min-width: 48rem) {
   .js .menu__link {
@@ -245,7 +234,9 @@ h4 {
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  width: 100%;
+  float: left; }
   @media only screen and (min-width: 48rem) {
     .js nav {
       max-height: none;

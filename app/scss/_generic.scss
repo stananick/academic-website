@@ -16,14 +16,14 @@ header {
   overflow: hidden;
 
   @include breakpoint-medium {
-    &.grid {
+    &.header {
       display: flex;
       align-items: center;
     }
   }
 
   @include breakpoint-large {
-    &.grid {
+    &.header {
       max-width: 55rem;
       margin: 1rem auto;
     }

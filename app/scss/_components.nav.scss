@@ -2,6 +2,12 @@
   .menu {
     overflow: hidden;
     padding-top: 1rem;
+    width: 20%;
+    float: left;
+
+    @include breakpoint-medium {
+      display: none;
+    }
   }
   
   .menu__link {
@@ -48,6 +54,8 @@
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    width: 100%;
+    float: left;
 
     @include breakpoint-medium {
       max-height: none;
