@@ -3,10 +3,11 @@
 }
 
 .overview {
-  @media only screen and (min-width: 48rem) {
+
+  @include breakpoint-medium {
     display: flex;
     align-items: center;
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
   }
 }
@@ -15,7 +16,7 @@
   max-width: 60%;
   padding: 0 0 0.25rem 0;
 
-  @media only screen and (min-width: 48rem) {
+  @include breakpoint-medium {
     max-width: 20%;
     padding-right: 2rem;
   }
@@ -23,13 +24,18 @@
 
 .download {
   display: block;
+  margin: 1.25rem 0;
 }
 
 .paper-listing__item {
   border-bottom: 1px solid black;
   padding: 1rem 0;
 
-  @media only screen and (min-width: 48rem) {
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @include breakpoint-medium {
     display: flex;
     
     &__image {

@@ -14,12 +14,20 @@ header {
   overflow: hidden; }
   @media only screen and (min-width: 48rem) {
     header.grid {
-      display: flex; } }
+      display: flex;
+      align-items: center; } }
+  @media only screen and (min-width: 60rem) {
+    header.grid {
+      max-width: 55rem;
+      margin: 1rem auto; } }
 
 main {
   padding: 1rem;
-  max-width: 50rem;
   margin: 0 auto; }
+  @media only screen and (min-width: 48rem) {
+    main {
+      padding: 2rem;
+      max-width: 50rem; } }
 
 a {
   text-decoration: none;
@@ -31,6 +39,9 @@ ul {
 
 li {
   padding: 0.25rem 0; }
+  @media only screen and (min-width: 48rem) {
+    li {
+      padding: 0.5rem 0; } }
 
 p {
   word-wrap: break-word;
@@ -45,7 +56,7 @@ p {
   .overview {
     display: flex;
     align-items: center;
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto; } }
 
 .overview__image {
@@ -57,11 +68,14 @@ p {
       padding-right: 2rem; } }
 
 .download {
-  display: block; }
+  display: block;
+  margin: 1.25rem 0; }
 
 .paper-listing__item {
   border-bottom: 1px solid black;
   padding: 1rem 0; }
+  .paper-listing__item:last-child {
+    border-bottom: 0; }
   @media only screen and (min-width: 48rem) {
     .paper-listing__item {
       display: flex; }
@@ -86,11 +100,30 @@ p {
 
 .heading {
   text-align: center; }
+  @media only screen and (min-width: 48rem) {
+    .heading {
+      width: 35%; } }
+  @media only screen and (min-width: 60rem) {
+    .heading {
+      text-align: left;
+      width: 40%; } }
+  @media only screen and (min-width: 48rem) {
+    .heading__title {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 60rem) {
+    .heading__title {
+      font-size: 1.8rem; } }
   .heading__tagline {
     font-size: 0.9rem;
     line-height: 1.1rem;
     font-weight: 400;
     display: block; }
+    @media only screen and (min-width: 48rem) {
+      .heading__tagline {
+        font-size: 0.75rem; } }
+    @media only screen and (min-width: 60rem) {
+      .heading__tagline {
+        font-size: 0.9rem; } }
 
 .contact-heading {
   font-size: 1.25rem;
@@ -175,7 +208,7 @@ h4 {
   overflow: hidden;
   padding-top: 1rem; }
 
-@media screen and (min-width: 48rem) {
+@media only screen and (min-width: 48rem) {
   .js .menu__link {
     display: none; } }
 
@@ -213,9 +246,15 @@ h4 {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-  @media screen and (min-width: 48rem) {
+  @media only screen and (min-width: 48rem) {
     .js nav {
-      max-height: none; } }
+      max-height: none;
+      width: 65%;
+      float: right; } }
+  @media only screen and (min-width: 60rem) {
+    .js nav {
+      text-align: right;
+      width: 60%; } }
   .js nav.active {
     max-height: 15rem; }
   .js nav ul {
@@ -232,7 +271,7 @@ h4 {
     @media only screen and (min-width: 48rem) {
       .js nav li {
         display: inline-block;
-        margin: 0 0.25rem;
+        margin: 0;
         border: 0; } }
   .js nav li > a {
     display: block; }

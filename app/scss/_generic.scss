@@ -15,17 +15,29 @@ header {
   margin: 0.5rem 0;
   overflow: hidden;
 
-  @media only screen and (min-width: 48rem) {
+  @include breakpoint-medium {
     &.grid {
       display: flex;
+      align-items: center;
+    }
+  }
+
+  @include breakpoint-large {
+    &.grid {
+      max-width: 55rem;
+      margin: 1rem auto;
     }
   }
 }
 
 main {
   padding: 1rem;
-  max-width: 50rem;
   margin: 0 auto;
+
+  @include breakpoint-medium {
+    padding: 2rem;
+    max-width: 50rem;
+  }
 }
 
 a {
@@ -40,6 +52,10 @@ ul {
 
 li {
   padding: 0.25rem 0;
+
+  @include breakpoint-medium {
+    padding: 0.5rem 0;
+  }
 }
 
 p {

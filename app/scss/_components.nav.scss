@@ -5,7 +5,7 @@
   }
   
   .menu__link {
-    @media screen and (min-width: 48rem) {
+    @include breakpoint-medium {
       display: none;
     }
   }
@@ -49,8 +49,15 @@
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 
-    @media screen and (min-width: 48rem) {
+    @include breakpoint-medium {
       max-height: none;
+      width: 65%;
+      float: right;
+    }
+
+    @include breakpoint-large {
+      text-align: right;
+      width: 60%;
     }
 
     &.active {
@@ -62,7 +69,7 @@
       padding: 0;
       border-top: 1px solid #000;
 
-      @media only screen and (min-width: 48rem) {
+      @include breakpoint-medium {
         margin: 0 0 0 -0.25rem;
         border: 0;
       }
@@ -72,9 +79,9 @@
       border-bottom: 1px solid $primary-color;
       padding: 0.5rem 0 0.5rem 2rem;
 
-      @media only screen and (min-width: 48rem) {
+      @include breakpoint-medium {
         display: inline-block;
-        margin: 0 0.25rem;
+        margin: 0;
         border: 0;
       }
     }
