@@ -2,7 +2,8 @@ body {
   margin: 0 auto;
   font-size: 1rem;
   font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #555; }
 
 img {
   max-width: 100%;
@@ -10,16 +11,18 @@ img {
   display: block; }
 
 header {
-  margin: 0.5rem 0;
-  overflow: hidden; }
-  @media only screen and (min-width: 48rem) {
-    header.header {
-      display: flex;
-      align-items: center; } }
-  @media only screen and (min-width: 60rem) {
-    header.header {
-      max-width: 55rem;
-      margin: 1rem auto; } }
+  overflow: hidden;
+  background-color: #483B59; }
+  header .header {
+    margin: 0.5rem 0; }
+    @media only screen and (min-width: 48rem) {
+      header .header {
+        display: flex;
+        align-items: center; } }
+    @media only screen and (min-width: 60rem) {
+      header .header {
+        max-width: 55rem;
+        margin: 1rem auto; } }
 
 main {
   padding: 1rem;
@@ -31,7 +34,8 @@ main {
 
 a {
   text-decoration: none;
-  color: #777; }
+  color: #483B59;
+  text-decoration: underline; }
 
 ul {
   margin: 1rem;
@@ -72,7 +76,7 @@ p {
   margin: 1.25rem 0; }
 
 .paper-listing__item {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #F2E7AE;
   padding: 1rem 0; }
   .paper-listing__item:last-child {
     border-bottom: 0; }
@@ -101,14 +105,20 @@ p {
 .heading {
   text-align: center;
   width: 80%;
-  float: left; }
+  float: left;
+  color: #efefef;
+  padding-bottom: 0.75rem; }
   @media only screen and (min-width: 48rem) {
     .heading {
-      width: 35%; } }
+      width: 35%;
+      padding-bottom: 0; } }
   @media only screen and (min-width: 60rem) {
     .heading {
       text-align: left;
       width: 40%; } }
+  .heading__title a {
+    color: inherit;
+    text-decoration: none; }
   @media only screen and (min-width: 48rem) {
     .heading__title {
       font-size: 1.5rem; } }
@@ -162,7 +172,7 @@ h3 {
   font-size: 1.25rem;
   line-height: 2.5rem;
   font-weight: 400;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #F2E7AE;
   margin: 1rem 0 0.5rem 0; }
 
 h4 {
@@ -204,7 +214,7 @@ h4 {
 .js .menu__link__line {
   width: 30px;
   height: 2px;
-  background-color: #000;
+  background-color: #D9ADCA;
   display: block;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -249,15 +259,12 @@ h4 {
   .js nav.active {
     max-height: 15rem; }
   .js nav ul {
-    margin: 1rem 0 0 0;
-    padding: 0;
-    border-top: 1px solid #000; }
+    margin: 0 0 0.5rem 0;
+    padding: 0; }
     @media only screen and (min-width: 48rem) {
       .js nav ul {
-        margin: 0 0 0 -0.25rem;
-        border: 0; } }
+        margin: 0 0 0 -0.25rem; } }
   .js nav li {
-    border-bottom: 1px solid #2D2630;
     padding: 0.5rem 0 0.5rem 2rem; }
     @media only screen and (min-width: 48rem) {
       .js nav li {
@@ -265,13 +272,26 @@ h4 {
         margin: 0;
         border: 0; } }
   .js nav li > a {
-    display: block; }
+    display: block;
+    color: #efefef;
+    text-decoration: none; }
+    .js nav li > a:hover {
+      color: #F2E7AE;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
 
 footer {
-  background-color: #333;
+  background-color: #483B59;
   color: #efefef;
   padding: 0.5rem;
   margin-top: 2rem; }
+  footer a {
+    color: #efefef; }
+    footer a:hover {
+      color: #F2E7AE; }
 
 .footer-nav {
   list-style: none;

@@ -3,6 +3,7 @@ body {
   font-size: 1rem;
   font-family: $primary-font;
   font-weight: 400;
+  color: $medium-gray;
 }
 
 img {
@@ -12,18 +13,18 @@ img {
 }
 
 header {
-  margin: 0.5rem 0;
   overflow: hidden;
+  background-color: $primary-color;
 
-  @include breakpoint-medium {
-    &.header {
+  .header {
+    margin: 0.5rem 0;
+
+    @include breakpoint-medium {
       display: flex;
       align-items: center;
     }
-  }
-
-  @include breakpoint-large {
-    &.header {
+  
+    @include breakpoint-large {
       max-width: 55rem;
       margin: 1rem auto;
     }
@@ -42,7 +43,8 @@ main {
 
 a {
   text-decoration: none;
-  color: $medium-gray;
+  color: $primary-color;
+  text-decoration: underline;
 }
 
 ul {
