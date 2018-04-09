@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var del = require('del');
 var runSequence = require('run-sequence');
+var cleanCSS = require('gulp-clean-css');
 var injectPartials = require('gulp-inject-partials');
 var browserSync = require('browser-sync').create();
 
@@ -24,11 +25,21 @@ gulp.task('browserSync', function() {
   })
 });
 
+//minify css
+gulp.task('minify-css', function() {
+  return gulp.src('app/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/css/'));
+});
+
+// move
 gulp.task('move', function() {
   gulp.src('app/*.html')
     .pipe(gulp.dest('dist'))
   gulp.src('app/css/*.css')
     .pipe(gulp.dest('dist/css'))
+  gulp.src('app/img/*')
+    .pipe(gulp.dest('dist/img'))
   gulp.src('app/js/*.js')
     .pipe(gulp.dest('dist/js'))
   gulp.src('app/json/*.js')
@@ -54,5 +65,5 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', ['sass', 'move'], callback);
+  runSequence('clean:dist', ['sass', 'move', 'minify-css'], callback);
 });

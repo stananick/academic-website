@@ -1,7 +1,5 @@
 $(document).ready(function() {
   //Menu scripts
-  $('body').addClass('js');
-
   var $menu = $('#menu');
   var $menulink = $('.menu__link');
   

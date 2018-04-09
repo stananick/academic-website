@@ -198,20 +198,20 @@ h4 {
 .item-group__item__title {
   font-weight: 600; }
 
-.js .menu {
+.menu {
   overflow: hidden;
   padding-top: 1rem;
   width: 20%;
   float: left; }
   @media only screen and (min-width: 48rem) {
-    .js .menu {
+    .menu {
       display: none; } }
 
 @media only screen and (min-width: 48rem) {
-  .js .menu__link {
+  .menu__link {
     display: none; } }
 
-.js .menu__link__line {
+.menu__link__line {
   width: 30px;
   height: 2px;
   background-color: #D9ADCA;
@@ -223,22 +223,22 @@ h4 {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-.js .menu__link.active .menu__link__line:nth-child(2) {
+.menu__link.active .menu__link__line:nth-child(2) {
   opacity: 0; }
 
-.js .menu__link.active .menu__link__line:nth-child(1) {
+.menu__link.active .menu__link__line:nth-child(1) {
   -webkit-transform: translateY(10px) rotate(45deg);
   -ms-transform: translateY(10px) rotate(45deg);
   -o-transform: translateY(10px) rotate(45deg);
   transform: translateY(10px) rotate(45deg); }
 
-.js .menu__link.active .menu__link__line:nth-child(3) {
+.menu__link.active .menu__link__line:nth-child(3) {
   -webkit-transform: translateY(-4px) rotate(-45deg);
   -ms-transform: translateY(-4px) rotate(-45deg);
   -o-transform: translateY(-4px) rotate(-45deg);
   transform: translateY(-4px) rotate(-45deg); }
 
-.js nav {
+nav {
   max-height: 0;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -248,34 +248,34 @@ h4 {
   width: 100%;
   float: left; }
   @media only screen and (min-width: 48rem) {
-    .js nav {
+    nav {
       max-height: none;
       width: 65%;
       float: right; } }
   @media only screen and (min-width: 60rem) {
-    .js nav {
+    nav {
       text-align: right;
       width: 60%; } }
-  .js nav.active {
+  nav.active {
     max-height: 15rem; }
-  .js nav ul {
+  nav ul {
     margin: 0 0 0.5rem 0;
     padding: 0; }
     @media only screen and (min-width: 48rem) {
-      .js nav ul {
+      nav ul {
         margin: 0 0 0 -0.25rem; } }
-  .js nav li {
+  nav li {
     padding: 0.5rem 0 0.5rem 2rem; }
     @media only screen and (min-width: 48rem) {
-      .js nav li {
+      nav li {
         display: inline-block;
         margin: 0;
         border: 0; } }
-  .js nav li > a {
+  nav li > a {
     display: block;
     color: #efefef;
     text-decoration: none; }
-    .js nav li > a:hover {
+    nav li > a:hover {
       color: #F2E7AE;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
