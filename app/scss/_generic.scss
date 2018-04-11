@@ -43,8 +43,12 @@ main {
 
 a {
   text-decoration: none;
-  color: $primary-color;
-  text-decoration: underline;
+  color: darken($secondary-color, 30%);
+  transition: color 0.1s ease-in-out;
+
+  &:hover {
+    color: darken($secondary-color, 10%);
+  }
 }
 
 ul {

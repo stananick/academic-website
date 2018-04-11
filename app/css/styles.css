@@ -34,8 +34,10 @@ main {
 
 a {
   text-decoration: none;
-  color: #483B59;
-  text-decoration: underline; }
+  color: #a24b84;
+  transition: color 0.1s ease-in-out; }
+  a:hover {
+    color: #c98ab3; }
 
 ul {
   margin: 1rem;
@@ -74,6 +76,10 @@ p {
 .download {
   display: block;
   margin: 1.25rem 0; }
+  .download img {
+    float: left;
+    max-width: 20px;
+    padding-right: 0.4rem; }
 
 .paper-listing__item {
   border-bottom: 1px solid #F2E7AE;
