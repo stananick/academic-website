@@ -54,6 +54,14 @@
   line-height: 1.25rem;
 }
 
+.paper-listing__item__more__title {
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
 .paper-listing__item__more__content {
   display: none;
   font-size: 0.9rem;

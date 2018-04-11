@@ -1,6 +1,7 @@
 .item-group,
 .item-group__item,
-.additional-info {
+.additional-info,
+.list--alt {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -12,8 +13,22 @@
 
 .item-group__item {
   padding: 0.5rem 1rem;
+
+  &-container {
+
+    @include breakpoint-medium {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
 }
 
 .item-group__item__title {
   font-weight: 600;
+}
+
+.list--alt {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
 }

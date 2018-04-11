@@ -94,6 +94,10 @@ p {
   font-size: 0.9rem;
   line-height: 1.25rem; }
 
+.paper-listing__item__more__title:hover {
+  cursor: pointer;
+  text-decoration: underline; }
+
 .paper-listing__item__more__content {
   display: none;
   font-size: 0.9rem;
@@ -126,7 +130,7 @@ p {
     .heading__title {
       font-size: 1.8rem; } }
   .heading__tagline {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.1rem;
     font-weight: 400;
     display: block; }
@@ -184,7 +188,8 @@ h4 {
 
 .item-group,
 .item-group__item,
-.additional-info {
+.additional-info,
+.list--alt {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -194,13 +199,22 @@ h4 {
 
 .item-group__item {
   padding: 0.5rem 1rem; }
+  @media only screen and (min-width: 48rem) {
+    .item-group__item-container {
+      display: inline-flex;
+      align-items: center; } }
 
 .item-group__item__title {
   font-weight: 600; }
 
+.list--alt {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px; }
+
 .menu {
   overflow: hidden;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   width: 20%;
   float: left; }
   @media only screen and (min-width: 48rem) {
