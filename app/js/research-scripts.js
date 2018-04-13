@@ -35,42 +35,38 @@ $(document).ready(function() {
         `);
   });
 
-  //Slide down toggle
-//   $('.paper-listing__item__tabs p').click(function(){
-//     let self = $(this);
-//     let className = self.attr('class').replace('tab', 'body');
-
-//     //let itemBody = self.parent().siblings('.paper-listing__item__body');
-
-//     let toggleItem = self.parent().parent().find('.' + className);
-
-//     toggleItem.slideToggle();
-
-//     // if(itemBody.hasClass('expanded')) {
-//     //   itemBody.removeClass('expanded')
-//     //   toggleItem.slideUp();
-
-//     //   itemBody.addClass('expanded')
-//     //   toggleItem.slideDown();
-//     //   console.log('test');
-//     // } else {
-//     //   itemBody.addClass('expanded')
-//     //   toggleItem.slideDown();
-//     //   console.log('yes');
-//     // }
-//   });
   $('.paper-listing__item__more__abstract-tab').click(function() {
     let self = $(this);
     let itemToggle = self.parent().parent().find('.paper-listing__item__more__abstract-body');
-    
-    itemToggle.slideToggle().addClass('expanded');
+
+    if(itemToggle.hasClass('expanded')) {
+      itemToggle.removeClass('expanded').slideUp();
+    } else {
+      if(itemToggle.siblings().hasClass('expanded')) {
+        itemToggle.siblings().removeClass('expanded');
+        $('.paper-listing__item__more__bibtex-body').slideUp();
+        itemToggle.addClass('expanded').slideDown();
+      } else {
+        itemToggle.addClass('expanded').slideDown();
+      }
+    }
   });
 
   $('.paper-listing__item__more__bibtex-tab').click(function() {
     let self = $(this);
     let itemToggle = self.parent().parent().find('.paper-listing__item__more__bibtex-body');
-    
-    itemToggle.slideToggle().addClass('expanded');
+
+    if(itemToggle.hasClass('expanded')) {
+      itemToggle.removeClass('expanded').slideUp();
+    } else { 
+      if(itemToggle.siblings().hasClass('expanded')) {
+        itemToggle.siblings().removeClass('expanded');
+        $('.paper-listing__item__more__abstract-body').slideUp();
+        itemToggle.addClass('expanded').slideDown();
+      } else {
+        itemToggle.addClass('expanded').slideDown();
+      }
+    }
   });
 
 });
