@@ -90,7 +90,9 @@ p {
     .paper-listing__item {
       display: flex; }
       .paper-listing__item__image {
-        padding: 0 1rem 0 0; } }
+        padding: 0 1rem 0 0; }
+        .paper-listing__item__image img {
+          max-width: 175px; } }
 
 .paper-listing__item__title {
   padding: 1rem 0 0.5rem 0; }
@@ -100,16 +102,21 @@ p {
   font-size: 0.9rem;
   line-height: 1.25rem; }
 
-.paper-listing__item__more__title:hover {
-  cursor: pointer;
-  text-decoration: underline; }
+.paper-listing__item__tabs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 10rem; }
+  .paper-listing__item__tabs:hover {
+    cursor: pointer; }
 
-.paper-listing__item__more__content {
+.paper-listing__item__more__abstract-body,
+.paper-listing__item__more__bibtex-body {
   display: none;
   font-size: 0.9rem;
   line-height: 1.25rem;
   padding-bottom: 1rem; }
-  .paper-listing__item__more__content code {
+  .paper-listing__item__more__abstract-body code,
+  .paper-listing__item__more__bibtex-body code {
     font-size: 0.75rem; }
 
 .heading {

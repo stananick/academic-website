@@ -6,7 +6,7 @@ var researchJSON = {
             "collapseLabel": "Khasawneh2018",
             "date": "2018",
             "image": "http://lorempixel.com/200/200",
-            "altText": "Altername Image Text",
+            "altText": "Alternate Image Text",
             "title": "Topological Data Analysis for True Step Detection in Piecewise Constant Signals"
         },
         {
@@ -14,6 +14,8 @@ var researchJSON = {
             "bibtex": "@unpublished{Khasawneh2018a,<br> author = {Firas A. Khasawneh and Elizabeth Munch and Jose A. Perea},<br> note = {Conference paper, in submission},<br> title = {Chatter Classification in Turning using Machine Learning and Topological Data Analysis},<br> year = {2018}<br>}<br><br>",
             "collapseLabel": "Khasawneh2018a",
             "date": "2018",
+            "image": "http://lorempixel.com/200/200",
+            "altText": "Alternate Image Text",
             "title": "Chatter Classification in Turning using Machine Learning and Topological Data Analysis"
         },
         {
@@ -21,6 +23,8 @@ var researchJSON = {
             "bibtex": "@unpublished{Cang2018,<br> author = {Zixuan Cang and Elizabeth Munch and Guo-Wei Wei},<br> note = {Preprint},<br> title = {Evolutionary homology on a dynamical system},<br> year = {2018}<br>}<br><br>",
             "collapseLabel": "Cang2018",
             "date": "2018",
+            "image": "http://lorempixel.com/200/200",
+            "altText": "Alternate Image Text",
             "title": "Evolutionary homology on a dynamical system"
         },
         {
@@ -29,6 +33,8 @@ var researchJSON = {
             "bibtex": "@inbook{Khasawneh2017,<br> address = {Cham},<br> author = {Khasawneh, Firas A. and Munch, Elizabeth},<br> booktitle = {Time Delay Systems: Theory, Numerics, Applications, and Experiments},<br> doi = {10.1007/978-3-319-53426-8_7},<br> editor = {Insperger, Tam{\\'a}s and Ersal, Tulga and Orosz, G{\\'a}bor},<br> link = {https://www.springerprofessional.de/en/utilizing-topological-data-analysis-for-studying-signals-of-time/12191012},<br> pages = {93--106},<br> publisher = {Springer International Publishing},<br> title = {Utilizing Topological Data Analysis for Studying Signals of Time-Delay Systems},<br> year = {2017}<br>}<br><br>",
             "collapseLabel": "Khasawneh2017",
             "date": "2017",
+            "image": "http://lorempixel.com/200/200",
+            "altText": "Alternate Image Text",
             "originalLink": "<a class = 'extLink' href='https://www.springerprofessional.de/en/utilizing-topological-data-analysis-for-studying-signals-of-time/12191012'> Publisher Website </a>",
             "title": "Utilizing Topological Data Analysis for Studying Signals of Time-Delay Systems",
             "venue": "Time Delay Systems: Theory, Numerics, Applications, and Experiments"
@@ -59,6 +65,8 @@ var researchJSON = {
             "bibtex": "@article{Khasawneh2015,<br> author = {Firas A. Khasawneh and Elizabeth Munch},<br> doi = {10.1016/j.ymssp.2015.09.046},<br> issn = {0888-3270},<br> journal = {Mechanical Systems and Signal Processing},<br> link = {http://www.sciencedirect.com/science/article/pii/S0888327015004598},<br> month = {mar},<br> pages = {527--541},<br> publisher = {Elsevier {BV}},<br> title = {Chatter detection in turning using persistent homology},<br> volume = {70-71},<br> year = {2016}<br>}<br><br>",
             "collapseLabel": "Khasawneh2015",
             "date": "2016",
+            "image": "http://lorempixel.com/200/200",
+            "altText": "Alternate Image Text",
             "originalLink": "<a class = 'extLink' href='http://www.sciencedirect.com/science/article/pii/S0888327015004598'> Publisher Website </a>",
             "title": "Chatter detection in turning using persistent homology",
             "venue": "Mechanical Systems and Signal Processing"
