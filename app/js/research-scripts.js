@@ -32,7 +32,7 @@ $(document).ready(function() {
             ${researchItem.bibtex ? `<p class="paper-listing__item__more__bibtex-body"><code>${researchItem.bibtex}</code></p>` : ''}
           </section>
         </section>
-        `);
+      `);
   });
 
   $('.paper-listing__item__more__abstract-tab').click(function() {
@@ -45,7 +45,9 @@ $(document).ready(function() {
       if(itemToggle.siblings().hasClass('expanded')) {
         itemToggle.siblings().removeClass('expanded');
         $('.paper-listing__item__more__bibtex-body').slideUp();
-        itemToggle.addClass('expanded').slideDown();
+        setTimeout(function() {
+          itemToggle.addClass('expanded').slideDown();
+        }, 400);
       } else {
         itemToggle.addClass('expanded').slideDown();
       }
@@ -62,12 +64,13 @@ $(document).ready(function() {
       if(itemToggle.siblings().hasClass('expanded')) {
         itemToggle.siblings().removeClass('expanded');
         $('.paper-listing__item__more__abstract-body').slideUp();
-        itemToggle.addClass('expanded').slideDown();
+        setTimeout(function() {
+          itemToggle.addClass('expanded').slideDown();
+        }, 400);
       } else {
         itemToggle.addClass('expanded').slideDown();
       }
     }
   });
-
 });
 
