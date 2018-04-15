@@ -44,6 +44,8 @@ gulp.task('move', function() {
     .pipe(gulp.dest('dist/js'))
   gulp.src('app/json/*.js')
     .pipe(gulp.dest('dist/json'));
+  gulp.src('app/pdf/*')
+    .pipe(gulp.dest('dist/pdf'));
 });
 
 //injecting partials

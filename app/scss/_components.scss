@@ -64,14 +64,6 @@
   line-height: 1.25rem;
 }
 
-// .paper-listing__item__more__title {
-
-//   &:hover {
-//     cursor: pointer;
-//     text-decoration: underline;
-//   }
-// }
-
 .paper-listing__item__tabs {
   display: flex;
   justify-content: space-between;
@@ -81,17 +73,6 @@
     cursor: pointer;
   }
 }
-
-// .paper-listing__item__more__content {
-//   display: none;
-//   font-size: 0.9rem;
-//   line-height: 1.25rem;
-//   padding-bottom: 1rem;
-
-//   code {
-//     font-size: 0.75rem;
-//   }
-// }
 
 .paper-listing__item__more__abstract-body,
 .paper-listing__item__more__bibtex-body {

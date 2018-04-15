@@ -38,6 +38,7 @@ main {
   @include breakpoint-medium {
     padding: 2rem;
     max-width: 50rem;
+    min-height: 350px;
   }
 }
 
