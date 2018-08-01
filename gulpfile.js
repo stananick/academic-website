@@ -1,10 +1,18 @@
 var gulp = require('gulp');
+var babel = require("gulp-babel");
 var sass = require('gulp-sass');
 var del = require('del');
 var runSequence = require('run-sequence');
 var cleanCSS = require('gulp-clean-css');
 var injectPartials = require('gulp-inject-partials');
 var browserSync = require('browser-sync').create();
+
+//babel
+gulp.task("babel", function () {
+  return gulp.src("app/raw-scripts/research-scripts.js")
+    .pipe(babel())
+    .pipe(gulp.dest("app/js"));
+});
 
 //compiling sass
 gulp.task('sass', function() {
@@ -67,5 +75,5 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', ['sass', 'move', 'minify-css'], callback);
+  runSequence('clean:dist', ['babel', 'sass', 'move', 'minify-css'], callback);
 });
